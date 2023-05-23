@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Electricidad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Calculadora de Electricidad</h1>
+  </header>
+  <main>
+    <h2>Corriente Eléctrica</h2>
+    <div class="input-group">
+      <label for="voltajeCorriente">Voltaje (V):</label>
+      <input type="number" id="voltajeCorriente">
+    </div>
+    <div class="input-group">
+      <label for="resistenciaCorriente">Resistencia (Ω):</label>
+      <input type="number" id="resistenciaCorriente">
+    </div>
+    <div class="input-group">
+      <button id="calcularCorriente">Calcular</button>
+    </div>
+    <div id="resultadoCorriente"></div>
+
+    <h2>Resistencia Equivalente en Serie</h2>
+    <div class="input-group">
+      <label for="resistenciaSerie">Resistencias en Serie (Ω):</label>
+      <input type="text" id="resistenciaSerie">
+    </div>
+    <div class="input-group">
+      <button id="calcularResistenciaSerie">Calcular</button>
+    </div>
+    <div id="resultadoResistenciaSerie"></div>
+
+    <h2>Resistencia Equivalente en Paralelo</h2>
+    <div class="input-group">
+      <label for="resistenciaParalelo">Resistencias en Paralelo (Ω):</label>
+      <input type="text" id="resistenciaParalelo">
+    </div>
+    <div class="input-group">
+      <button id="calcularResistenciaParalelo">Calcular</button>
+    </div>
+    <div id="resultadoResistenciaParalelo"></div>
+
+    <h2>Potencia Disipada</h2>
+    <div class="input-group">
+      <label for="voltajePotencia">Voltaje (V):</label>
+      <input type="number" id="voltajePotencia">
+    </div>
+    <div class="input-group">
+      <label for="corrientePotencia">Corriente (A):</label>
+      <input type="number" id="corrientePotencia">
+    </div>
+    <div class="input-group">
+      <button id="calcularPotencia">Calcular</button>
+    </div>
+    <div id="resultadoPotencia"></div>
+
+    <h2>Voltaje</h2>
+    <div class="input-group">
+      <label for="corrienteVoltaje">Corriente (A):</label>
+      <input type="number" id="corrienteVoltaje">
+    </div>
+    <div class="input-group">
+      <label for="resistenciaVoltaje">Resistencia (Ω):</label>
+      <input type="number" id="resistenciaVoltaje">
+    </div>
+    <div class="input-group">
+      <button id="calcularVoltaje">Calcular</button>
+    </div>
+    <div id="resultadoVoltaje"></div>
+
+    <h2>Graficar Corriente</h2>
+    <div class="input-group">
+      <label for="tiempos">Tiempos (separados por coma):</label>
+      <input type="text" id="tiempos">
+    </div>
+    <div class="input-group">
+      <label for="corrientes">Corrientes (separadas por coma):</label>
+      <input type="text" id="corrientes">
+    </div>
+    <div class="input-group">
+      <button id="generarGrafico">Generar Gráfico</button>
+    </div>
+    <div id="grafico-container">
+      <canvas id="graficoCanvas"></canvas>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
